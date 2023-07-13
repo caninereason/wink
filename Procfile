@@ -1,1 +1,1 @@
-web: gunicorn wink:wsgi:application
+web: gunicorn wink.wsgi:application
