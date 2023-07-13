@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'bootstrap4',
     'profiles',
 
     # Other
