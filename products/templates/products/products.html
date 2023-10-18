@@ -82,6 +82,16 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            {% if user.is_authenticated %}
+                                            <a href="{% url 'toggle_favourites' product.id %}">
+                                                {% if product in user.userprofile.favourite_products.all %}
+                                                    Remove from Favourites
+                                                {% else %}
+                                                    Add to Favourites
+                                                {% endif %}
+                                            </a>
+                                        {% endif %}
+                                        
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 

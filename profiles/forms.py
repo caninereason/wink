@@ -5,7 +5,7 @@ from .models import UserProfile
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        exclude = ('user',)
+        exclude = ('user', 'favourite_products')  # Exclude the favourite_products field
 
     def __init__(self, *args, **kwargs):
         """
@@ -24,7 +24,8 @@ class UserProfileForm(forms.ModelForm):
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'default_country':
+            # Check if the field exists in the placeholders dictionary
+            if field in placeholders:
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
@@ -32,3 +33,5 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+            

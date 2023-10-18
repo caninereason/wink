@@ -1,7 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, Product
 from .forms import UserProfileForm
 
 from checkout.models import Order
@@ -22,11 +22,13 @@ def profile(request):
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
+    favourite_products = profile.favourite_products.all()  # Fetch the favourite products
 
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
+        'favourite_products': favourite_products,  # Add to context
         'on_profile_page': True
     }
 
@@ -48,3 +50,15 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+def toggle_favourites(request, product_id):
+    """ Toggle a product in user's favourites """
+    product = get_object_or_404(Product, pk=product_id)
+    user_profile = UserProfile.objects.get(user=request.user)
+    
+    if product in user_profile.favourite_products.all():
+        user_profile.favourite_products.remove(product)
+    else:
+        user_profile.favourite_products.add(product)
+    
+    return redirect('product_detail', product_id=product_id)
