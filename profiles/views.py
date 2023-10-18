@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect , redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile, Product
@@ -61,4 +61,4 @@ def toggle_favourites(request, product_id):
     else:
         user_profile.favourite_products.add(product)
     
-    return redirect('product_detail', product_id=product_id)
+    return redirect(f'/products/#product{product_id}')
