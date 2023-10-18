@@ -1,4 +1,5 @@
 from django.db import models
+import re
 
 
 class Category(models.Model):
@@ -29,3 +30,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_correct_image_url(self):
+        # Define the desired base URL
+        base_url = 'https://app-wink.s3.amazonaws.com/media/'
+
+        # Append the image filename to the base URL
+        return base_url + self.image.name

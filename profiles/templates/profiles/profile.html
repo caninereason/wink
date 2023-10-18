@@ -81,7 +81,7 @@
         {% for product in favourite_products %}
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                    <img src="{{ product.image_url }}" alt="{{ product.name }}" class="card-img-top">
+                    <img src="{{ product.get_correct_image_url }}" alt="{{ product.name }}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
