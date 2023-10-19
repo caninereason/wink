@@ -39,11 +39,30 @@
   <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <!-- Logo Column -->
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>w</strong>INK</h2>
                 </a>
             </div>
+        
+            <!-- Newsletter Icon Column for Large Screens -->
+
+    <li class="col-12 col-lg-1 my-auto py-1 py-lg-0 d-lg-inline d-none">
+        <form action="{% url 'toggle-newsletter' %}" method="post" onsubmit="return confirm('Are you sure you wish to {% if subscribed %}unsubscribe{% else %}subscribe{% endif %}?');">
+            {% csrf_token %}
+            <button type="submit" class="logo-font font-weight-bold nav-link text-black mr-5" style="background: none; border: none;">
+                {% if subscribed %}
+                   <i class="fa fa-envelope"></i>
+                {% else %}
+                   <i class="far fa-envelope"></i>
+                {% endif %}
+            </button>
+        </form>
+    </li>
+
+        
+            <!-- Search Form Column -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
