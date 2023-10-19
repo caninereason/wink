@@ -26,5 +26,5 @@ def toggle_newsletter_subscription(request):
         messages.success(request, 'Successfully subscribed to the newsletter!')
     else:
         messages.success(request, 'Successfully unsubscribed from the newsletter!')
-
+    request.session['subscribed'] = subscription.subscribed
     return redirect(request.META.get('HTTP_REFERER', 'default_redirect_url'))
