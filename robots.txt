@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://app-wink-b5e6bffc56ae.herokuapp.com/sitemap.xml
