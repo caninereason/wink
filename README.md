@@ -2,11 +2,11 @@
 
 # Wink
 
-![Am I Responsive Image](https://res.cloudinary.com/dbagkfamv/image/upload/v1700340031/am_I_responsive_qf6uyg.png)
+![Am I Responsive Image](/media/AIR.png)
 
-Github link to the project [Github link](https://github.com/RichBurman/highlands_project5)
+Github link to the project [Github link](https://github.com/caninereason/wink)
 
-Live Link to the project website [Live link](https://highlands-fe23cbc4972e.herokuapp.com/)
+Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herokuapp.com/)
 
 ## CONTENTS
 
@@ -108,12 +108,12 @@ Live Link to the project website [Live link](https://highlands-fe23cbc4972e.hero
 
 - Exclusive Events and Memberships: Offering exclusive memberships or access to special events, like virtual gallery tours or artist meet-and-greets, can be an additional revenue stream.
 
-![Facebook Business Page](https://res.cloudinary.com/dbagkfamv/image/upload/v1700340288/facebook_business_page_idefss.png)
+![Facebook Business Page]()
 
 
 ### User Stories
 
-![User Stories](https://res.cloudinary.com/dbagkfamv/image/upload/v1700340281/user_stories1_jzndtw.png)
+![User Stories]()
 
 ## User Features
 
@@ -140,7 +140,7 @@ Live Link to the project website [Live link](https://highlands-fe23cbc4972e.hero
 
 Github Project
 
-![Github Project](https://res.cloudinary.com/dbagkfamv/image/upload/v1700340872/Github_Project_bzjxkl.png)
+![Github Project]()
 
 
 #### Client Goals
@@ -215,7 +215,7 @@ Github Project
     - It had a clear heading and brief information section informing the user what the website is about. 
     - It has a large image of an artwork to draw the user into the website and capture their attention. 
 
-    ![Home Page](https://res.cloudinary.com/dbagkfamv/image/upload/v1700343694/homepage1_m8ciea.png)
+    ![Home Page]()
 
     
     ### The Navigation bar
@@ -229,7 +229,7 @@ Github Project
         - Cart - links to the cart page, where users can view their cart and what artworks they have in their cart for purchase. They can change the quantity, remove the package, or proceed to the checkout. 
         - My Account - gives an unregistered user the ability to login or register, should the user be logged in, it allows them to see their profile information, or to logout.Should the user have staff status they can further edit products and details here.
         
-    ![Navigation Bar for Registered Users](https://res.cloudinary.com/dbagkfamv/image/upload/v1700343517/nav_bar_registereduser_hhcvey.png)
+    ![Navigation Bar for Registered Users]()
 
     
 
@@ -242,23 +242,23 @@ Github Project
         - Twitter - This would link to the Highland Adventure Twitter page. I have linked this to twitter.com - as this is a project and not a live business. 
         - Instagram - This would link to the Highland Adventure Instagram page. I have linked this to Instagram.com - as this is a project and not a live business. 
 
-    ![Footer](https://res.cloudinary.com/dbagkfamv/image/upload/v1700343840/footer_qxrhkn.png)
+    ![Footer]()
 
     ###  Social media links
 
     - A collection of social media links where the user may find more Wink pages and content
 
-    ![Package List](https://res.cloudinary.com/dbagkfamv/image/upload/v1700344145/packages_list_di1tvj.png)
+    ![Package List]()
 
    
     ###  Contact Us
 
     - A simple form where the user may submit any query should they have a problem or suggestion.
 
-    ![About Us](https://res.cloudinary.com/dbagkfamv/image/upload/v1700344495/aboutus_yz5cyg.png)
+    ![About Us]()
 
 
-    ![Gallery](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345141/gallery_p3hgqw.png)
+    ![Gallery]()
 
    
 
@@ -276,10 +276,10 @@ Github Project
 
         - If the user has not added any packages to the cart and clicks on the cart button in the navigation bar, they will find the cart to be empty and this is displayed to the user. 
 
-        ![Empty Cart](https://res.cloudinary.com/dbagkfamv/image/upload/v1700353459/empty_cart_qhvoiy.png)
+        ![Empty Cart]()
 
 
-    ![Cart](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346630/cart_cjchov.png)
+    ![Cart]()
 
     ### Checkout 
 
@@ -296,11 +296,11 @@ Github Project
 
         - Please see the image below of the checkout page prior to the hiding of the discount code function. 
 
-     ![Checkout](https://res.cloudinary.com/dbagkfamv/image/upload/v1700357773/all_fields__needed_e7epm7.png)
+     ![Checkout]()
 
      - Please see the image below of the checkout page, which now hides the discount code function. 
 
-     ![Live Checkout Page](https://res.cloudinary.com/dbagkfamv/image/upload/v1700387068/Updated_checkout_view_wzsriy.png)
+     ![Live Checkout Page]()
 
      ### Order Confirmation
 
@@ -318,7 +318,7 @@ Github Project
         
         - This provides the user with confirmation that the order has been processed and payment has been taken. 
 
-     ![Order Confirmed](https://res.cloudinary.com/dbagkfamv/image/upload/v1700358553/checkout_success_lzx5df.png)
+     ![Order Confirmed]()
 
     
 
@@ -326,9 +326,9 @@ Github Project
 
     - This allows the user to login/logout of the website if they are not logged in or logged out. 
     - Login
-    - ![Login](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345098/login_fposb8.png)
+    - ![Login]()
     - Logout
-    - ![Logout](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346454/logout_rlke4p.png)
+    - ![Logout]()
        
 
     ###  Register - Set Up using AllAuth
@@ -341,23 +341,23 @@ Github Project
     - Password again
 
     - Once this information is entered, the user will be sent an email asking them to verify their email address and once that is complete, they will be registered on the site and their details added to the database. 
-    ![Register](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346576/register_mllzsa.png)
+    ![Register]()
 
     ###  User Profile Details
     - User Profile
 
     - User Profile - links to a page where the user can view their User Profile and Personal Information. This also displays to the user a discount code. 
 
-    ![User Profile](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346710/user_profile_ivrlgi.png)
+    ![User Profile]()
     - Edit User Profile
 
     - Edit User Profile - links to a page where the user can edit their user profile
 
-    ![Edit User Profile](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346750/edit_user_profile_jvoc9h.png)
+    ![Edit User Profile]()
     - Edit Personal Details
 
     - Edit Personal Details - links to a page where the user can edit their personal information. 
-    - ![Edit Personal Details](https://res.cloudinary.com/dbagkfamv/image/upload/v1700346750/edit_user_profile_jvoc9h.png)
+    - ![Edit Personal Details]()
 
 
     ## Admin Features
@@ -379,12 +379,12 @@ Github Project
             - Edit Personal Details - links to a page where the user can edit their personal information. 
         - Admin Login - links to the /admin page where the staff member can login to the admin page for the website. 
 
-    ![Staff Navigation Bar](https://res.cloudinary.com/dbagkfamv/image/upload/v1700347435/staff_nav_qy9k7b.png)
+    ![Staff Navigation Bar]()
 
     ###  Admin Sign In
 
     - This is where staff will sign in to the access the Django Admin section of the website, where they can access the database for the website. 
-    ![Admin Sign In](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345691/admin_signin_vfydef.png)
+    ![Admin Sign In]()
 
     ###  Admin View
 
@@ -407,7 +407,7 @@ Github Project
 
     - The admin can enter any of these sections and create, read, edit and delete any item in any of these sections. 
 
-    ![Admin View](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345694/admin_view_xcxmfy.png)
+    ![Admin View]()
 
     ###  Admin Discount View
 
@@ -415,11 +415,11 @@ Github Project
     - Code - the admin can set the discount code. Currently the discount code for all registered user is HA10, which is showed on the checkout page and User Profile page to registered users. 
     - Discount percentage - the admin can set the percentage of the discount. 
 
-    ![Admin Discount View](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345693/discount_admin_s70wk8.png)
+    ![Admin Discount View]()
 
     #### Detailed View
 
-    ![Admin Discount View Discount](https://res.cloudinary.com/dbagkfamv/image/upload/v1700354543/discount_detail_qw3l3g.png)
+    ![Admin Discount View Discount]()
 
     ###  Admin Order Items
 
@@ -429,10 +429,10 @@ Github Project
         - Quantity - what quantity of the package was ordered. 
 
 
-    ![Admin Order Items](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345690/order_items_admin_cblvmd.png)
+    ![Admin Order Items]()
 
     #### Detailed View
-    ![Detailed View Order Item](https://res.cloudinary.com/dbagkfamv/image/upload/v1700347890/detail_order_item_udxf0y.png)
+    ![Detailed View Order Item]()
 
     ###  Admin Orders
 
@@ -444,20 +444,20 @@ Github Project
         - County - User County
         - Country - User Country - this is set using CountryField, so the user can select from all the countries. 
         - Phone Number - User phone number
-    ![Admin Orders](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345688/orders_admin_iqafey.png)
+    ![Admin Orders]()
 
     #### Detailed View
-    ![Detailed View Order ](https://res.cloudinary.com/dbagkfamv/image/upload/v1700347953/detail_order_runngi.png)
+    ![Detailed View Order ]()
 
     ###  Admin Payments
 
     - The admin staff can see the payments for all orders that have been processed. It contains:
         - Order - who the order is for. 
         - Amount - how much the order is for. 
-    ![Admin Payments](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345686/payment_admin_colzin.png)
+    ![Admin Payments]()
 
     ####  Detailed View
-    ![Detailed View Payment ](https://res.cloudinary.com/dbagkfamv/image/upload/v1700348031/detail_payment_ed4xgl.png)
+    ![Detailed View Payment ]()
 
     ###  Admin Packages
 
@@ -472,10 +472,10 @@ Github Project
             - Difficult
             - Challenging
 
-    ![Admin Packages](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345696/packages_admin_at0g2f.png)
+    ![Admin Packages]()
 
     ####  Detailed View
-    ![Detailed View Packages ](https://res.cloudinary.com/dbagkfamv/image/upload/v1700348122/detail_package_dkkeyg.png)
+    ![Detailed View Packages ]()
 
     ###  Admin Reviews
 
@@ -485,10 +485,10 @@ Github Project
         - Text - what text is entered in the textbox for the review
         - Difficulty Rating - what difficulty rating was set by the user
         - Overall Rating - what overall rating was set by the user. 
-    ![Admin Reviews](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345685/review_admin_gcwdrm.png)
+    ![Admin Reviews]()
 
     ####  Detailed View
-    ![Detailed View Review ](https://res.cloudinary.com/dbagkfamv/image/upload/v1700348179/detail_review_nzssmi.png)
+    ![Detailed View Review ]()
 
     ###  Admin User Profiles
 
@@ -497,21 +497,21 @@ Github Project
         - User - which user profile this is. 
         - Bio - the text the user entered for their bio. 
         - Profile Picture - the profile picture the user submited for their profile picture. 
-    ![Admin User Profiles](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345683/user_profile_admin_drdfcz.png)
+    ![Admin User Profiles]()
 
     ####  Detailed View
-    ![Detailed View User Profile ](https://res.cloudinary.com/dbagkfamv/image/upload/v1700348228/detail_userprofile_jsnyu5.png)
+    ![Detailed View User Profile ]()
 
     ###  Admin Users
 
     - The admin staff can view, edit, create and delete the users on the website here. This displays the username, first and last name, email, phone number, staff status and superuser status.
     
-    ![Admin Users](https://res.cloudinary.com/dbagkfamv/image/upload/v1700345682/users_admin_jmzbu9.png)
+    ![Admin Users]()
 
     ####  Detailed View
 
     - If they click on one of the users they can see the following: 
-    ![Detailed View User](https://res.cloudinary.com/dbagkfamv/image/upload/v1700348296/detail_user_n3azrs.png)
+    ![Detailed View User]()
 
 
 
@@ -770,9 +770,9 @@ To fork the repository:
 - Once all fields are completed, the order can be submited to Stripe. 
 
  - The checkout form has validation to make sure all the boxes are filled in, before the form is submited. The form needs validation on what is inputted in each box, as currently there is no validation on what can be entered into the fields. 
- ![](https://res.cloudinary.com/dbagkfamv/image/upload/v1700357709/form_complete_iqesnm.png)
+ ![]()
 - All fields on the checkout need to be complete before the order can be submitted. 
- ![All Fields needed](https://res.cloudinary.com/dbagkfamv/image/upload/v1700357773/all_fields__needed_e7epm7.png)
+ ![All Fields needed]()
 
  - The Discount code section has now been hidden from the checkout.html page now as this is detailed in the known bugs section below. 
 
