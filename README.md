@@ -108,7 +108,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 
 - Exclusive Events and Memberships: Offering exclusive memberships or access to special events, like virtual gallery tours or artist meet-and-greets, can be an additional revenue stream.
 
-![Facebook Business Page]()
+![Facebook Business Page](https://www.facebook.com/wink.414444)
 
 
 ### User Stories
@@ -148,7 +148,7 @@ Github Project
 - My client goals for this website are the following:
     - Increase sales for the client selling the artwork to an online market.
     - Enchance User Experience - Making a user friendly website where users can navigate easily and complete any purchases with ease. 
-    - Build Brand Awareness - With the website, the newsletter , and a facebook business page, this opens up Wink to a wide range of new market of potential customers. 
+    - Build Brand Awareness - With the website, the newsletter , and a facebook business page, this opens up Wink to a wide range of  potential customers. 
     - Customer Loyalty - Offering a online discount on orders could encourage users to sign up to the site, which encourages loyalty and repeat business
     - Ensuring Security and Data Protection - Ensuring the client meets security and data protection that is needed for online transactions and hosting a secure environment. 
     - Improving the SEO Ranking - Adding robots.txt and sitemap.xml and key meta data to the website encourages a higher ranking on SEO. 
@@ -159,14 +159,14 @@ Github Project
     - The website captures the attention of the user and they fully understand easily what the website is about and what it offers. 
     - Easy Navigation around the website, making it easy to find the information they want. 
     - Highlight the key features of Wink, the packages, the locations, the discount available
-    - Encouraging the use of the social media links, where users may be able to find out more information about Wink, but crucually share Wink to friends and family which hopefully results in more visitors to the website and potential new customers and therefore more sales. 
-    - Encouraging the user to read reviews of previous users experiences and encourage more sales.
+    - Encouraging the use of the social media links, where users may be able to find out more information about Wink, but crucually share Wink to friends and family which hopefully results in more visitors to the website and potentially adding new customers and therefore more sales. 
+    
 
 #### Returning and Frequent Visitor Goals
 
 -  My goals for returning users are the following:
-    - Encouraging users to favourite and eventually buy new works. With the addition of the favourite section, users will return to the site to view their favourites and hopefully to place more orders! 
-    -With the addition of the newsletter and Facebook business page, these can be a recurring method of marketing to the user if they haven't recently visited the website. 
+    - Encouraging users to favourite and eventually buy new works. With the addition of the favourite section, users will return to the site to view their favourite works and hopefully to place more orders! 
+    -With the addition of the newsletter and Facebook business page, these could be a recurring method of marketing to the user if they haven't recently visited the website. 
     
 
 ## Design
@@ -186,28 +186,6 @@ Github Project
 
 
 ## Features
-
-- The website consists of 20 html pages. Below in no particular order:
-    - cart.html
-    - checkout_success.html
-    - checkout.html
-    - about_us.html
-    - gallery.html
-    - index.html (Home Page)
-    - 404.html
-    - base.html
-    - custom_user_edit.html
-    - display_user_profile.html
-    - user_profile_edit.html
-    - user_profile.html
-
-    - Base.html is not accessible as a stand-alone page for the user, as it is used at the base template to host the other html pages (aside from 404.html)
-    - All other pages are accessible to registered users (depending on their journey on the wesbite, i.e. will see checkout_success if they successfully make a purchase of an artwork)
-    - Non registered users are limited to the following pages
-        - index.html (Home Page)
-        - gallery.html
-        
-    - The reasoning behind this only registered users can make purchases on the website and therefore non registered users do not need access to these pages. 
 
     ### Home Page
 
@@ -238,9 +216,9 @@ Github Project
     ### Footer 
 
     - The footer is displayed on every page on the website to allow users to navigate to the social links for Wink. 
-        - Facebook - This would link to the Highland Adventure business page. I have linked this to facebook.com, as this is a project and not a live business. 
-        - Twitter - This would link to the Highland Adventure Twitter page. I have linked this to twitter.com - as this is a project and not a live business. 
-        - Instagram - This would link to the Highland Adventure Instagram page. I have linked this to Instagram.com - as this is a project and not a live business. 
+        - Facebook - This would link to the Wink business page. I have linked this to the mock business page I have set up at facebook.com
+        - Twitter - This would link to the Wink Twitter page. I have linked this to twitter.com - as this is a project and not a live business. 
+        - Instagram - This would link to the Wink Instagram page. I have linked this to Instagram.com - as this is a project and not a live business. 
 
     ![Footer]()
 
@@ -255,30 +233,21 @@ Github Project
 
     - A simple form where the user may submit any query should they have a problem or suggestion.
 
-    ![About Us]()
-
-
-    ![Gallery]()
-
-   
+         
 
     ###  Cart
 
     - Cart displays to the user their cart. It display the following to the user:
         - A list of the items in the cart
-            - Package Title
             - Quantity - this can be adjust by the user inputting a number and clicking on Update Quantity button.
             - Update Quantity button - saves any changes the user makes to the quantity. 
             - Remove button - the user can click this button and it will remove the package from the cart. 
             - Total Price - this displays the total price of all the packages in the cart. 
-            - Displays a list of the packages and quantities of each. 
             - Proceed to Checkout Button - the user can click on this button and it will take the item(s) in the cart and take the user to the checkout page where they can process the order. 
 
-        - If the user has not added any packages to the cart and clicks on the cart button in the navigation bar, they will find the cart to be empty and this is displayed to the user. 
+        - If the user has not added any items to the cart and clicks on the cart button in the navigation bar, they will find the cart to be empty and this is displayed to the user. 
 
-        ![Empty Cart]()
-
-
+        
     ![Cart]()
 
     ### Checkout 
@@ -289,16 +258,9 @@ Github Project
         - County
         - Country
         - Order Summary - Display the items the user is purchasing and quantity. 
-        - Discount Code - where the user can input a discount code to apply discount (This has now been hidden from the user, due to an error processing discounted payments, please see known bugs)
-        - Apply Discount button - this processes the discount on the total price (This has now been hidden from the user, due to an error processing discounted payment, please see known bugs)
         - Card detail field - this is a stripe field where the user inputs their card details.
         - Submit button - this processes the purchase through to stripe. If the form is valid, the order will be submiited. The user will be redirected to order confirmation page. 
 
-        - Please see the image below of the checkout page prior to the hiding of the discount code function. 
-
-     ![Checkout]()
-
-     - Please see the image below of the checkout page, which now hides the discount code function. 
 
      ![Live Checkout Page]()
 
@@ -346,20 +308,10 @@ Github Project
     ###  User Profile Details
     - User Profile
 
-    - User Profile - links to a page where the user can view their User Profile and Personal Information. This also displays to the user a discount code. 
+    - User Profile - links to a page where the user can view their User Profile and Personal Information. This also displays to the user their favourite artworks. 
 
     ![User Profile]()
-    - Edit User Profile
-
-    - Edit User Profile - links to a page where the user can edit their user profile
-
-    ![Edit User Profile]()
-    - Edit Personal Details
-
-    - Edit Personal Details - links to a page where the user can edit their personal information. 
-    - ![Edit Personal Details]()
-
-
+    
     ## Admin Features
 
     ###  Navigation Bar for Staff
@@ -386,132 +338,15 @@ Github Project
     - This is where staff will sign in to the access the Django Admin section of the website, where they can access the database for the website. 
     ![Admin Sign In]()
 
-    ###  Admin View
-
-    - This is where the admin staff can access all the site admin for the website. It has the following items:
-
-    - Email addresses
-    - Groups
-    - Discount codes
-    - Order items
-    - Orders
-    - Payments
-    - Packages
-    - Reviews
-    - Sites
-    - Social accounts
-    - social application tokens
-    - social applications
-    - User profiles
-    - Users 
-
-    - The admin can enter any of these sections and create, read, edit and delete any item in any of these sections. 
-
-    ![Admin View]()
-
-    ###  Admin Discount View
-
-    - This is where admin staff can create, read, edit and delete any discount codes for the website. It has a two fields:
-    - Code - the admin can set the discount code. Currently the discount code for all registered user is HA10, which is showed on the checkout page and User Profile page to registered users. 
-    - Discount percentage - the admin can set the percentage of the discount. 
-
-    ![Admin Discount View]()
-
-    #### Detailed View
-
-    ![Admin Discount View Discount]()
-
-    ###  Admin Order Items
-
-    - The admin staff can see what items have been ordered on each order. It contains: 
-        - Order - who the order belongs to
-        - Package - which package was ordered by the user
-        - Quantity - what quantity of the package was ordered. 
-
-
-    ![Admin Order Items]()
-
-    #### Detailed View
-    ![Detailed View Order Item]()
-
-    ###  Admin Orders
-
-    - The admin staff can see what the order was for each user. It contains:
-        - User - which user placed the order
-        - Total Price - the total price of the order
-        - Address Line 1 - User first line of address
-        - Address Line 2 - User second line of address
-        - County - User County
-        - Country - User Country - this is set using CountryField, so the user can select from all the countries. 
-        - Phone Number - User phone number
-    ![Admin Orders]()
-
-    #### Detailed View
-    ![Detailed View Order ]()
-
-    ###  Admin Payments
-
-    - The admin staff can see the payments for all orders that have been processed. It contains:
-        - Order - who the order is for. 
-        - Amount - how much the order is for. 
-    ![Admin Payments]()
-
-    ####  Detailed View
-    ![Detailed View Payment ]()
-
-    ###  Admin Packages
-
-    - The admin staff can create, edit, view and delete all the packages that are on the website. It contains a list of all the packages and if the admin click on a package they can see the following:
-        - Title - the title of the package
-        - Description - Package Description
-        - Price - The price of the package
-        - Image - The image for the package
-        - Difficulty Rating - the setting of difficult for the package, the options are:
-            - Easy
-            - Moderate
-            - Difficult
-            - Challenging
-
-    ![Admin Packages]()
-
-    ####  Detailed View
-    ![Detailed View Packages ]()
-
-    ###  Admin Reviews
-
-    - The admin staff can view, edit, create and delete the reviews for all the packages on the website here. If the admin staff click on one of the reviews, they can see the following: 
-        - User - which user created the review
-        - Package - which package the review is for
-        - Text - what text is entered in the textbox for the review
-        - Difficulty Rating - what difficulty rating was set by the user
-        - Overall Rating - what overall rating was set by the user. 
-    ![Admin Reviews]()
-
-    ####  Detailed View
-    ![Detailed View Review ]()
-
-    ###  Admin User Profiles
-
-    - The admin staff can view, edit, create and delete the user profiles for all the users on the website. If they click on one of the user profiles they can see the following: 
-
-        - User - which user profile this is. 
-        - Bio - the text the user entered for their bio. 
-        - Profile Picture - the profile picture the user submited for their profile picture. 
-    ![Admin User Profiles]()
-
-    ####  Detailed View
-    ![Detailed View User Profile ]()
-
+    
     ###  Admin Users
 
     - The admin staff can view, edit, create and delete the users on the website here. This displays the username, first and last name, email, phone number, staff status and superuser status.
+    - the admin staff can edit all items for sale on the site, this can be done through the dropdown menu My Account/Product management.
     
-    ![Admin Users]()
+    
 
-    ####  Detailed View
-
-    - If they click on one of the users they can see the following: 
-    ![Detailed View User]()
+    
 
 
 
@@ -528,9 +363,8 @@ Github Project
     - This would enhance the user experience and allow the discount codes to change. Also, it would be good if discount codes had expiry dates or limited uses, to encourage sales and also prevent too many discounts. 
 
     - When the user completes an order, it would be good User experience, if they receieved an email with their order confirmation. 
-- Orders having Order Numbers for the user and admin
-    - This would allow orders to be found at ease for admin and also give the user a unique order number if they need to enquire about their order. 
-- Register an user account using social media
+
+- Register a user account using social media
     - User being able to create an account via social media, e.g. facebook, twitter etc. This would be good user experience, as users can create accounts very quickly and also offered marketing oppportunities for Highlands Adventures. 
 - Payment via ApplePay, Pay Pal etc
     - Currently payment is card only. It would be good to offer more methods of payment to the user to improve user experience. 
@@ -550,7 +384,7 @@ Django - A high-level Python web framework that encourages rapid development and
 
 Google sheets and Google Docs - To draw up user stories and writing up content for html pages.
 
-Codeanywhere - For version control
+Vscode - For version control
 
 Github - To save and store the files for the website
 
@@ -569,11 +403,7 @@ Stripe
 
 Cloudinary
 
-Django Star Ratings - but didn't use on project in the end. 
-
 Pillow
-
-Django-countries
 
 gunicorn
 
@@ -586,6 +416,8 @@ Pip - for install python packages
 www.xml-sitemaps.com to create sitemap.xml
 
 Font Awesome
+
+Ajax
 
 ### Accessibility
 
@@ -724,7 +556,7 @@ Heroku was used to deploy the live website. The instruction to achieve this are 
 7. Click on Open App at the top right of the screen to view the live site.
 
 
-#### **Preparation for deployment in Codeanywhere**
+
 
 ### Local Development
 
@@ -752,16 +584,16 @@ To fork the repository:
 
 ### Full Testing
 
-- To fully test the website I performed the following tests using a number of different browsers, as well as testing on a MacBook Pro 16" and a iPhone 13 Pro Max.
+- To fully test the website I performed the following tests using a number of different browsers, as well as testing on a Windows 10 desktop and laptop, also a number of android phones were used during testing.
 
 - I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
 
 ### Packages and Cart
 
- - All packages can be added to the cart for the package detail page.  
+ - All items can be added to the cart for the item detail page.  
  - In the Cart
-    - package quantities can be updated using the update quantity button
-    - packages can be removed using the remove button
+    - item quantities can be updated using the update quantity button
+    - items can be removed using the remove button
     - The user can proceed to the checkout and all items from the cart will be transfereed succesfully to the checkout. 
 
 ### Checkout
@@ -772,9 +604,7 @@ To fork the repository:
  - The checkout form has validation to make sure all the boxes are filled in, before the form is submited. The form needs validation on what is inputted in each box, as currently there is no validation on what can be entered into the fields. 
  ![]()
 - All fields on the checkout need to be complete before the order can be submitted. 
- ![All Fields needed]()
 
- - The Discount code section has now been hidden from the checkout.html page now as this is detailed in the known bugs section below. 
 
  ### Messages 
  - All messages throughout the website work as expected.
@@ -782,15 +612,15 @@ To fork the repository:
  ### Users
 
  - New users can be registered. 
- - Admin can add new users, staff users and superuser is the admin. 
+ - Admin can add new users, and staff users. 
 
  ### User Profile and User Personal Information
 
  - All user profile and user personal information can be edited and works as expected. 
 
- ### User Reviews
+ ### User Favourites
 
- - All user reviews worked as expected, can be viewed by user or admin. User reviews can be edited/deleted by the user who created them and also by Admin. 
+ - All user Favourites worked as expected,and can be viewed by user . User Favourites can be liked/unliked by the user who created them.
 
 ### Admin
 
