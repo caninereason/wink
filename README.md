@@ -19,7 +19,6 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
       - [User Features](#user-features) 
       - [Admin Features](#admin-features)
       - [Client Goals](#client-goals)
-      - [First Time Visitor Goals](#first-time-visior-goals)
       - [Returning and Frequent Visitor Goals](#returning-and-frequent-visitor-goals)
   - [Design](#design)
     - [Typography](#typography)
@@ -28,15 +27,9 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
     - [Home Page](#home-page)
     - [The Navigation Bar](#the-navigation-bar)
     - [Footer](#footer)
-    - [View Packages](#view-packages)
-    - [Package Detail](#package-detail)
-    - [About Us](#about-us)
-    - [Gallery](#gallery)
-    - [Review](#reviews)
     - [Cart](#cart)
     - [Checkout](#checkout)
     - [Order Confirmation](#order-confirmation)
-    - [User Reviews](#user-reviews)
     - [Login/Logout](#loginlogout---set-up-using-allauth)
     - [Register](#register---set-up-using-allauth)
     - [User Profile Details](#user-profile-details)
@@ -113,7 +106,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 
 ### User Stories
 
-![User Stories]()
+![User Stories](media/agile.png)
 
 ## User Features
 
@@ -134,13 +127,12 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 1. **I want to** log in and log out of my admin account, **so that I can** have secure access to the website admin features while keeping this information protected.
 2. **I want to** manage the list of available artworks, including adding, editing, and deleting packages, **so that I can** edit and maintain the list, ensuring it is up to date and correct.
 3. **I want to** view a list of registered users and their profile information, **so that I can** address inquiries or issues and ensure a safe, secure, user-friendly experience.
-4. **I want to** access and manage user orders, including viewing details and updating the status of an order, **so that I can** oversee and process orders, track sales, and address any issues.
-5. **I want to** receive notifications or emails when a new order is placed or when a user submits a review, **so that I can** be kept informed of important events happening on the website and respond in a timely fashion.
+4. **I want to** receive notifications or emails when a new order is placed or when a user submits a review, **so that I can** be kept informed of important events happening on the website and respond in a timely fashion.
 
 
 Github Project
 
-![Github Project]()
+![Github Project](media/ghproj.png)
 
 
 #### Client Goals
@@ -195,7 +187,7 @@ Github Project
     - It had a clear heading and brief information section informing the user what the website is about. 
     - It has a large image of an artwork to draw the user into the website and capture their attention. 
 
-    ![Home Page]()
+    ![Home Page](media/home.png)
 
     
     ### The Navigation bar
@@ -209,7 +201,7 @@ Github Project
         - Cart - links to the cart page, where users can view their cart and what artworks they have in their cart for purchase. They can change the quantity, remove the package, or proceed to the checkout. 
         - My Account - gives an unregistered user the ability to login or register, should the user be logged in, it allows them to see their profile information, or to logout.Should the user have staff status they can further edit products and details here.
         
-    ![Navigation Bar for Registered Users]()
+    ![Navigation Bar ](media/nav.png)
 
     
 
@@ -222,21 +214,18 @@ Github Project
         - Twitter - This would link to the Wink Twitter page. I have linked this to twitter.com - as this is a project and not a live business. 
         - Instagram - This would link to the Wink Instagram page. I have linked this to Instagram.com - as this is a project and not a live business. 
 
-    ![Footer]()
+    ![Footer](media/footer.png)
 
     ###  Social media links
 
     - A collection of social media links where the user may find more Wink pages and content
 
-    ![Package List]()
-
-   
+       
     ###  Contact Us
 
     - A simple form where the user may submit any query should they have a problem or suggestion.
 
          
-
     ###  Cart
 
     - Cart displays to the user their cart. It display the following to the user:
@@ -250,8 +239,7 @@ Github Project
         - If the user has not added any items to the cart and clicks on the cart button in the navigation bar, they will find the cart to be empty and this is displayed to the user. 
 
         
-    ![Cart]()
-
+    
     ### Checkout 
 
     - The checkout allows the user to process the payment of the items from the cart. The checkout contains a form with the following:
@@ -264,8 +252,7 @@ Github Project
         - Submit button - this processes the purchase through to stripe. If the form is valid, the order will be submiited. The user will be redirected to order confirmation page. 
 
 
-     ![Live Checkout Page]()
-
+     
      ### Order Confirmation
 
      - This is the order confirmation and displays to the user the following:
@@ -282,7 +269,7 @@ Github Project
         
         - This provides the user with confirmation that the order has been processed and payment has been taken. 
 
-     ![Order Confirmed]()
+     
 
     
 
@@ -290,9 +277,9 @@ Github Project
 
     - This allows the user to login/logout of the website if they are not logged in or logged out. 
     - Login
-    - ![Login]()
+    - ![Login](media/login.png)
     - Logout
-    - ![Logout]()
+    - ![Logout](media/logout.png)
        
 
     ###  Register - Set Up using AllAuth
@@ -305,14 +292,14 @@ Github Project
     - Password again
 
     - Once this information is entered, the user will be sent an email asking them to verify their email address and once that is complete, they will be registered on the site and their details added to the database. 
-    ![Register]()
+    ![Register](media/reg.png)
 
     ###  User Profile Details
     - User Profile
 
     - User Profile - links to a page where the user can view their User Profile and Personal Information. This also displays to the user their favourite artworks. 
 
-    ![User Profile]()
+    ![User Profile](media/profile.png)
     
     ## Admin Features
 
@@ -333,12 +320,12 @@ Github Project
             - Edit Personal Details - links to a page where the user can edit their personal information. 
         - Admin Login - links to the /admin page where the staff member can login to the admin page for the website. 
 
-    ![Staff Navigation Bar]()
+    ![Staff Navigation Bar](media/staffp.png)
 
     ###  Admin Sign In
 
     - This is where staff will sign in to the access the Django Admin section of the website, where they can access the database for the website. 
-    ![Admin Sign In]()
+    ![Admin Sign In](media/admina.png)
 
     
     ###  Admin Users
@@ -649,6 +636,7 @@ All css pages passed W3C testing.
 ## Credits
 
 [Kera Cudmore README Template and Deployment Code](https://github.com/kera-cudmore/Bully-Book-Club/blob/main/README.md)
+[Rich Burman README Template and Deployment Code](https://github.com/RichBurman/highlands_project5#readme)
 
 
 ### Code Used
@@ -675,6 +663,6 @@ Research using [w3c](https://www.w3schools.com/), [bootstrap](https://getbootstr
 
 - I would like to thank the following:
     
-    - A big thanks to my mentor! You have been fantastic thank you
+    - A big thank you to my mentor ! You have been crucial to helping me finish this project
     
-    - Thank you to fellow students in Slack for your support and help at times. 
+    - Thank you to fellow students and staff in Slack for your support and help at times. 
