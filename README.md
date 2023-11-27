@@ -52,14 +52,8 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
     - [Full Testing](#full-testing)
     - [W3C Validator](#w3c-validator)
     - [Solved Bugs](#solved-bugs)
-    - [Known Bugs](#known-bugs)
     - [Lighthouse](#lighthouse)
-      - [Index Page](#index-page)
-      - [My Bookings](#my-bookings)
-      - [New Bookings](#new-bookings)
-      - [Edit Bookings](#edit-bookings)
-      - [Booking Success](#booking-success)
-  - [Credits](#credits)
+    - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content)
     - [Media](#media)
@@ -623,6 +617,11 @@ To fork the repository:
 
 There were a couple of errors with nesting includes but it did not affect overall performance.
 All css pages passed W3C testing. 
+
+### Solved Bugs
+
+- I had a bug where the sort function was not working, although I found I had removed the script. replacing it solved the problem.
+
 
 ### Lighthouse
 
