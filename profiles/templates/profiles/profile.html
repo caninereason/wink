@@ -83,9 +83,12 @@
                 <div class="card">
                     <img src="{{ product.get_correct_image_url }}" alt="{{ product.name }}" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
+                        <h5 class="card-title ">
+                            <a  style="color: black;" href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
                         </h5>
+                        <button type="button" class="btn btn-link p-0 border-0 fav-button-form toggle-fav" data-product-id="{{ product.id }}">
+                            <i class="{% if product in user.userprofile.favourite_products.all %}fas fa-heart{% else %}far fa-heart{% endif %}" aria-hidden="true" style="color: red;"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -99,4 +102,30 @@
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle-fav').click(function() {
+                var button = $(this);
+                var productId = button.data('product-id');
+                var url = `/profiles/toggle_favourites/${productId}/`; // Corrected URL
+                
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data: {
+                        'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val() // Fetch CSRF token
+                    },
+                    success: function(response) {
+                        if (response.is_favourite) {
+                            button.find('i').removeClass('far').addClass('fas');
+                        } else {
+                            button.find('i').removeClass('fas').addClass('far');
+                        }
+                    }
+                    
+                });
+            });
+            
+        });
+    </script>
 {% endblock %}

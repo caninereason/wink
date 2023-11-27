@@ -3,9 +3,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile, Product
 from .forms import UserProfileForm
-
+from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
 from checkout.models import Order
-
+from django.apps import apps
 
 @login_required
 def profile(request):
@@ -53,12 +54,18 @@ def order_history(request, order_number):
 
 def toggle_favourites(request, product_id):
     """ Toggle a product in user's favourites """
+    UserProfile = apps.get_model('profiles', 'UserProfile')
     product = get_object_or_404(Product, pk=product_id)
     user_profile = UserProfile.objects.get(user=request.user)
     
     if product in user_profile.favourite_products.all():
         user_profile.favourite_products.remove(product)
+        is_favourite = False
+        
     else:
         user_profile.favourite_products.add(product)
-    
-    return redirect(f'/products/#product{product_id}')
+        is_favourite = True
+        
+    return JsonResponse({'is_favourite': is_favourite})
+
+

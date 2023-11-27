@@ -76,7 +76,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 
 ## User Experience (UX)
 
-- Wink is an innovative e-commerce platform dedicated to empowering artists to share, distribute, and sell their work. Designed as a vibrant community for creators across various disciplines, Wink offers a suite of intuitive tools to showcase art, engage with audiences, and manage sales. It's more than just a marketplace; it's a space where artists connect with art enthusiasts, gain exposure, and tell their unique stories. For art lovers, Wink is a treasure trove of original pieces, offering direct access to a diverse world of creativity and the artists behind it. 
+- Wink is an innovative e-commerce platform dedicated to empowering artists to share, distribute, and sell their work. Designed as a vibrant community for creators across various disciplines, Wink offers a suite of intuitive tools to showcase art, engage with audiences, and manage sales. It's a space where artists connect with art enthusiasts, gain exposure, and tell their unique stories. For art lovers, Wink is a treasure trove of original pieces, offering direct access to a diverse world of creativity and the artists behind it. 
 
 ### Key Information for the site
 
@@ -96,7 +96,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 
 - Wink
 
-- Commission on Sales: Wink likely earns revenue by taking a commission on each piece of art sold through the platform, providing a steady income stream as artists sell their work.
+- Commission on Sales: Wink earns revenue by taking a commission on each piece of art sold through the platform, providing a steady income stream as artists sell their work.
 
 - Artist Subscription Fees: The platform may charge artists a subscription or listing fee to showcase their work, ensuring a consistent revenue regardless of sales.
 
@@ -147,9 +147,9 @@ Github Project
 
 - My client goals for this website are the following:
     - Increase sales for the client selling the artwork to an online market.
-    - Enchance User Experience - Making a user friendly website were users can navigate easily and complete any purchases with ease. 
+    - Enchance User Experience - Making a user friendly website where users can navigate easily and complete any purchases with ease. 
     - Build Brand Awareness - With the website, the newsletter , and a facebook business page, this opens up Wink to a wide range of new market of potential customers. 
-    - Customer Loyalty - Offering a online discount on orders encourages users to sign up to the site, which encourages loyalty and repeat business
+    - Customer Loyalty - Offering a online discount on orders could encourage users to sign up to the site, which encourages loyalty and repeat business
     - Ensuring Security and Data Protection - Ensuring the client meets security and data protection that is needed for online transactions and hosting a secure environment. 
     - Improving the SEO Ranking - Adding robots.txt and sitemap.xml and key meta data to the website encourages a higher ranking on SEO. 
 

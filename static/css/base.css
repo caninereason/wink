@@ -10,6 +10,15 @@ body {
     font-family: 'Lato';
 }
 
+.image-container {
+    position: relative;
+}
+
+.fav-button-form {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -281,6 +290,8 @@ input[name='q']::placeholder {
     }
 }
 
+
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
@@ -322,11 +333,7 @@ input[name='q']::placeholder {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
-
-    .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
-    }
-
-   
+    
+    
     
 }
