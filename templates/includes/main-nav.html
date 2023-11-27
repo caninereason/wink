@@ -51,12 +51,13 @@
                 <a href="{% url 'products' %}?category=Oil,Acrylic" class="dropdown-item">All Mediums</a>
             </div>
         </li>
-
+        {% if user.is_authenticated %}
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'contact' %}" id="contact"  aria-expanded="false">
                 Contact Us
             </a>
             
         </li>
+        {% endif %}
     </ul>
 </div>

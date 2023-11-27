@@ -9,7 +9,22 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+.content-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -50px; 
+}
 
+.footer, .content-wrap:after {
+    height: 50px; 
+}
+
+.footer {
+    z-index: -10;
+    background: #ffffff; /* Example background color for the footer */
+    color: rgb(0, 0, 0); /* Example text color */
+    /* Other styling for the footer */
+}
 .image-container {
     position: relative;
 }
