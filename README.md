@@ -108,7 +108,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 
 - Exclusive Events and Memberships: Offering exclusive memberships or access to special events, like virtual gallery tours or artist meet-and-greets, can be an additional revenue stream.
 
-![Facebook Business Page](https://www.facebook.com/wink.414444)
+[Facebook Business Page](https://www.facebook.com/wink.414444)
 
 
 ### User Stories
@@ -186,6 +186,8 @@ Github Project
 
 
 ## Features
+
+- The website consists of many features to help guide the user and delivery a comfortable experience:
 
     ### Home Page
 
@@ -651,7 +653,7 @@ All css pages passed W3C testing.
 
 ### Code Used
 
-Code was used for the base.html from the [Boutique_ado](https://github.com/Code-Institute-Org/boutique_ado_v1) walkthrough. 
+Code was used as a template for the website from the [Boutique_ado](https://github.com/Code-Institute-Org/boutique_ado_v1) walkthrough. 
 
 ### Content
 
