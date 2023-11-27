@@ -64,10 +64,11 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                 {% endif %}
+                {% if user.is_authenticated %}
                 <button type="button" class="btn btn-link p-0 border-0 fav-button-form toggle-fav" data-product-id="{{ product.id }}">
                     <i class="{% if product in user.userprofile.favourite_products.all %}fas fa-heart{% else %}far fa-heart{% endif %}" aria-hidden="true" style="color: red;"></i>
                 </button>
-                
+                {% endif %}
                 
             </div>
             <div class="card-body pb-0">
@@ -169,5 +170,33 @@
             });
         });
         
+    </script>
+     <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
     </script>
 {% endblock %}
