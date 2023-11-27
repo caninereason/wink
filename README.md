@@ -621,17 +621,15 @@ To fork the repository:
 
 ### W3C Validator
 
-All html pages passed W3C testing. (Apart from Parse Errors)
+There were a couple of errors with nesting includes but it did not affect overall performance.
 All css pages passed W3C testing. 
 
 ### Lighthouse
 
 - The lighthouse scores show the following:
 
-![Lighthouse]()
+![Lighthouse](media/lh.png)
 
-- Image Size is affecting the performance. However, the quantity of the images add to the user experience. 
-![Lighthouse 2]()
 
 ## Credits
 
@@ -655,8 +653,6 @@ Research using [w3c](https://www.w3schools.com/), [bootstrap](https://getbootstr
 
 - Screenshots taken from the following website for this README
 - Lighthouse
-- Jigsaw validator
-- W3C validator
 - Am I Responsive?
 
 ### Acknowledgments
