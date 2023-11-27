@@ -119,7 +119,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 ## Admin Features
 
 1. **I want to** log in and log out of my admin account, **so that I can** have secure access to the website admin features while keeping this information protected.
-2. **I want to** manage the list of available artworks, including adding, editing, and deleting packages, **so that I can** edit and maintain the list, ensuring it is up to date and correct.
+2. **I want to** manage the list of available artworks, including adding, editing, and deleting items, **so that I can** edit and maintain the list, ensuring it is up to date and correct.
 3. **I want to** view a list of registered users and their profile information, **so that I can** address inquiries or issues and ensure a safe, secure, user-friendly experience.
 4. **I want to** receive notifications or emails when a new order is placed or when a user submits a review, **so that I can** be kept informed of important events happening on the website and respond in a timely fashion.
 
@@ -144,7 +144,7 @@ Github Project
 - My goals for users visiting the website for the first time are the following:
     - The website captures the attention of the user and they fully understand easily what the website is about and what it offers. 
     - Easy Navigation around the website, making it easy to find the information they want. 
-    - Highlight the key features of Wink, the packages, the locations, the discount available
+    - Highlight the key features of Wink, the artwork, the artists, the discount available
     - Encouraging the use of the social media links, where users may be able to find out more information about Wink, but crucually share Wink to friends and family which hopefully results in more visitors to the website and potentially adding new customers and therefore more sales. 
     
 
@@ -168,7 +168,7 @@ Github Project
 ### Imagery
 
 
-- All images were created and are owned by Author Ciaran Neeson
+- All images were created by Author Ciaran Neeson
 
 
 ## Features
@@ -192,7 +192,8 @@ Github Project
         - subscribe - flags the user as subscribed, showing a message confirming and sends them an email informing them of their subscription.
         - Artists - Gives a dropdown of available artists on the site.
         - Mediums - shows the user a dropdown of the different artistic mediums available to view.
-        - Cart - links to the cart page, where users can view their cart and what artworks they have in their cart for purchase. They can change the quantity, remove the package, or proceed to the checkout. 
+        - Contact us - links to a simple form where the user can send us an email. This is hidden should the user be logged out.
+        - Cart - links to the cart page, where users can view their cart and what artworks they have in their cart for purchase. They can change the quantity, remove the item, or proceed to the checkout. 
         - My Account - gives an unregistered user the ability to login or register, should the user be logged in, it allows them to see their profile information, or to logout.Should the user have staff status they can further edit products and details here.
         
     ![Navigation Bar ](media/nav.png)
@@ -207,6 +208,7 @@ Github Project
         - Facebook - This would link to the Wink business page. I have linked this to the mock business page I have set up at facebook.com
         - Twitter - This would link to the Wink Twitter page. I have linked this to twitter.com - as this is a project and not a live business. 
         - Instagram - This would link to the Wink Instagram page. I have linked this to Instagram.com - as this is a project and not a live business. 
+        - Youtube - This would link to the Wink Youtube page. I have linked this to Youtube.com - as this is a project and not a live business. 
 
     ![Footer](media/footer.png)
 
@@ -226,8 +228,8 @@ Github Project
         - A list of the items in the cart
             - Quantity - this can be adjust by the user inputting a number and clicking on Update Quantity button.
             - Update Quantity button - saves any changes the user makes to the quantity. 
-            - Remove button - the user can click this button and it will remove the package from the cart. 
-            - Total Price - this displays the total price of all the packages in the cart. 
+            - Remove button - the user can click this button and it will remove the item from the cart. 
+            - Total Price - this displays the total price of all the items in the cart. 
             - Proceed to Checkout Button - the user can click on this button and it will take the item(s) in the cart and take the user to the checkout page where they can process the order. 
 
         - If the user has not added any items to the cart and clicks on the cart button in the navigation bar, they will find the cart to be empty and this is displayed to the user. 
@@ -301,18 +303,11 @@ Github Project
 
     - The navigation bar for registered Staff users shows the following:
         - Home - links to Home Page
-        - View Packages - links to view a list of all the hiking packages offered and available to purchase. Users can select a package and go to a package detail section which displays more information on the package and allows the user to add to cart ready for purchasing. 
-        - About Us - links to an About Us page which details about Wink
-        - Gallery - links to a gallery page where users can view images from our packages
-        - Reviews - links to Reviews of all the packages on the website. Users can read through current reviews on any package they desire and also add a review to any package they desire. 
-        - Cart - links to the cart page, where users can view their cart and what packages they have in their cart for purchase. They can change the quantity, remove the package, or proceed to the checkout. 
-        - User Reviews - links to a page when the user can view their own reviews they have made on the website. This lists all their reviews on all packages. The user can view, edit their review or delete it if they wish. 
+        - Product management - links to the pages where staff may add/delete/edit product details. 
+        - Cart - links to the cart page, where users can view their cart and what items they have in their cart for purchase. They can change the quantity, remove the item, or proceed to the checkout. 
         - Logout - links to a logout page where the user can logout. 
-        - User Profile Details - this has a dropdown menu with 3 options
-            - User Profile - links to a page where the user can view their User Profile and Personal Information. Also this displays to the user their discount code. 
-            - Edit User Profile - links to a page where the user can edit their user profile
-            - Edit Personal Details - links to a page where the user can edit their personal information. 
-        - Admin Login - links to the /admin page where the staff member can login to the admin page for the website. 
+        - My Profile - links to the page where a user may edit their details and view and edit their favourites
+
 
     ![Staff Navigation Bar](media/staffp.png)
 
@@ -348,7 +343,7 @@ Github Project
     - When the user completes an order, it would be good User experience, if they receieved an email with their order confirmation. 
 
 - Register a user account using social media
-    - User being able to create an account via social media, e.g. facebook, twitter etc. This would be good user experience, as users can create accounts very quickly and also offered marketing oppportunities for Highlands Adventures. 
+    - User being able to create an account via social media, e.g. facebook, twitter etc. This would be good user experience, as users can create accounts very quickly and also offered marketing oppportunities for Wink. 
 - Payment via ApplePay, Pay Pal etc
     - Currently payment is card only. It would be good to offer more methods of payment to the user to improve user experience. 
 
@@ -531,10 +526,10 @@ git push heroku main
 Heroku was used to deploy the live website. The instruction to achieve this are below:
 
 1. Log in to Heroku.
-2. Find the app from this project and open - highlands
+2. Find the app from this project and open - wink
 3. Click on deploy.
 4. Find 'App connected to Github' and link to Github account.
-5. Search for repository and link - RichBurman/highlands_project5
+5. Search for repository and link - caninreason/wink
 6. Find Manual Deploy and click Deploy Branch.
 7. Click on Open App at the top right of the screen to view the live site.
 
@@ -548,7 +543,7 @@ Heroku was used to deploy the live website. The instruction to achieve this are 
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, RichBurman/highlands_project5
+2. Go to the repository for this project, caninereason/wink
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -571,7 +566,7 @@ To fork the repository:
 
 - I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
 
-### Packages and Cart
+### Cart
 
  - All items can be added to the cart for the item detail page.  
  - In the Cart
