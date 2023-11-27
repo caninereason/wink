@@ -3,17 +3,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     {% block meta %}
+        <meta name="keywords" content="art, artwork, paintings, sculptures, Artists, art collections, contemporary art">
+        <meta name="description" content="Explore original and unique art collections by Wink. Browse our latest artworks, including paintings, sculptures, and more.">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Explore original and unique art collections by Wink. Browse our latest artworks, including paintings, sculptures, and more.">
-        <meta name="keywords" content="art, artwork, paintings, sculptures, Artists, art collections, contemporary art">
     {% endblock %}
 
-    {% block extra_meta %}{% endblock %}
-
-    <title>🎨 Wink Unique Art Collections</title>
+    {% block extra_meta %}
+    {% endblock %}
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,33 +21,58 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
-    {% block extra_css %}{% endblock %}
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>🎨 Wink Unique Art Collections </title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <!-- Logo Column -->
             <div class="col-12 col-lg-1 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>w</strong>INK</h2>
                 </a>
             </div>
-
+        
+            <!-- Newsletter Icon Column for Large Screens -->
             <div class="col-12 col-lg-1 my-auto py-1 py-lg-0 mr-lg-5 ">
                 <form action="{% url 'toggle-newsletter' %}" method="post" onsubmit="return confirm('Are you sure you wish to {% if request.session.subscribed %}unsubscribe{% else %}subscribe{% endif %}?');">
                     {% csrf_token %}
-                    <button type="submit" class="logo-font font-weight-bold nav-link" aria-label="{% if request.session.subscribed %}Unsubscribe from newsletter{% else %}Subscribe to newsletter{% endif %}">
-                        <i class="{% if request.session.subscribed %}far{% else %}fa{% endif %} fa-envelope"></i>
-                        <span class="d-block text-center">{% if request.session.subscribed %}Unsubscribe{% else %}Subscribe{% endif %}</span>
+                    <button type="submit" class="logo-font font-weight-bold nav-link text-black" style="background: none; border: none;">
+                        {% if request.session.subscribed %}
+                            <i class="far fa-envelope"></i>
+                            <small class="d-block text-center">Unsubscribe</small>
+                        {% else %}
+                            <i class="fa fa-envelope"></i>
+                            <small class="d-block text-center">Subscribe</small>
+                        {% endif %}
                     </button>
                 </form>
             </div>
+            <div class="col-lg-1 ml-lg-5 ml-md-0"></div>
 
+        
+            <!-- Search Form Column -->
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-2 mx-auto">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-10">
-                        <input class="form-control border border-black rounded-0" type="search" name="q" placeholder="Search our site" aria-label="Search our site">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit" aria-label="Search">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -56,47 +81,47 @@
                     </div>
                 </form>
             </div>
-
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <nav aria-label="User and shopping navigation">
-                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                        <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="userMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="icon"><i class="fas fa-user fa-lg"></i></span>
-                                <span>My Account</span>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="userMenuLink">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                    {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
+                <ul><ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Account</p>
                             </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                                <span class="icon"><i class="fas fa-shopping-bag fa-lg"></i></span>
-                                <span>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
                                         $0.00
                                     {% endif %}
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul></ul>
             </div>
         </div>
-
         <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100" aria-label="Main navigation">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -104,16 +129,15 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <p class="logo-font my-1">Your Number 1 stop for prints and paintings</p>                
+                <h4 class="logo-font my-1">Your Number 1 stop for prints and paintings</h4>                
             </div>            
         </div>
     </header>
 
     {% if messages %}
-        <div class="message-container" aria-live="polite">
+        <div class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}
                     {% if level == 40 %}
@@ -130,41 +154,36 @@
         </div>
     {% endif %}
 
-    {% block page_header %}{% endblock %}
-    {% block content %}{% endblock %}
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
 
     {% block postloadjs %}
     <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-black">Made by Ciaran Neeson</p>
-        <nav aria-label="Social media links">
-            <ul class="list-inline text-center my-0">
-                <li class="list-inline-item">
-                    <a href="https://www.facebook.com/wink.414444" target="blank" rel="noopener noreferrer" aria-label="facebook">
-                        <i class="fab fa-facebook-square ml-5" style="color:black;"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <i class="fab fa-twitter-square ml-5" style="color: black;"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                        <i class="fab fa-instagram-square ml-5" style="color: black;"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <i class="fab fa-youtube-square ml-5" style="color: black;"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+
+        <p class="m-0 text-center text-black">Follow us:
+            <a href="https://www.facebook.com/wink.414444" target="blank" rel="noopener noreferrer" aria-label="facebook">
+                <i class="fab fa-facebook-square ml-5" style="color:black;"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-twitter-square ml-5" style="color: black;"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fab fa-instagram-square ml-5" style="color: black;"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-youtube-square ml-5" style="color: black;"></i>
+            </a>
+        </p>
+        
     </footer>
+    
   </body>
 </html>
