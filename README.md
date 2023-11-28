@@ -112,9 +112,7 @@ Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herok
 6. I want to add artworks to my shopping cart, so that I can conveniently manage my selections before checkout.
 7. I want to view the contents of my shopping cart, so that I can review my selections and make any necessary changes before purchase.
 8. I want to place an order for the artworks in my cart, so that I can complete the purchase and own the selected pieces.
-9. I want to submit reviews for artworks I have purchased, so that I can share my experience with the community and provide feedback about the art.
-10. I want to edit and delete my own reviews, so that I can update or remove my feedback if my opinion changes.
-11. I want to see ratings and reviews on artworks, so that I can gauge the popularity and reception of pieces to aid in my decision-making.
+9. I want to see ratings and reviews on artworks, so that I can gauge the popularity and reception of pieces to aid in my decision-making.
 
 ## Admin Features
 
