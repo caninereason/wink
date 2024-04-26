@@ -1,12 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Wink
+# Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herokuapp.com/)
 
 ![Am I Responsive Image](/media/AIR.png)
 
 Github link to the project [Github link](https://github.com/caninereason/wink)
 
-Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herokuapp.com/)
 
 ## CONTENTS
 
