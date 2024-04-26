@@ -1,5 +1,5 @@
 
-# Live Link to the project website [Live link](https://app-wink-b5e6bffc56ae.herokuapp.com/)
+# Live Link to the project website [Wink](https://app-wink-b5e6bffc56ae.herokuapp.com/)
 
 ![Am I Responsive Image](/media/AIR.png)
 
